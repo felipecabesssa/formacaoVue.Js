@@ -1,64 +1,46 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h1>{{ msgb }}</h1>
-    <h2>Links Brabos</h2>
+  <div>  
+    <h1>{{ titulo }}</h1>
+
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">xinga mto no Twitter</a></li>
+      <li v-for="foto of fotos">
+        <img :src="foto.url" :alt="foto.titulo">
+      </li>
     </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
-    <p>Teste paragrafo</p>
-    <a href="#">Teste Link</a>
+  
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
-  data () {
+
+  data() {
+
     return {
-      msg: 'Hello World',
-      msgb: 'Cabesssa BRABO'
+      titulo: 'BANK$LIFE',
+      fotos: [
+        {
+          url: 'https://curtamais.com.br/uploads/conteudos/861776e1ba57c8d51f31db8f7702b7d0.jpg',
+          titulo: 'Lehi leite nollie flip no bancão' 
+        },
+        {
+          url: 'https://latitude15.files.wordpress.com/2011/06/img_0915.jpg',
+          titulo: 'o PICO'
+        }
+      ]
     }
   }
+
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont,
+     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+      'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
