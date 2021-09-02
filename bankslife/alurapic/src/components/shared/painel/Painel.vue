@@ -35,7 +35,7 @@ export default {
   .painel .painel-titulo {
     text-align: center;
     border: solid 2px;
-    background: lightblue;
+    background: #ccffcc;
     margin: 0 0 15px 0;
     padding: 10px;
     text-transform: uppercase;

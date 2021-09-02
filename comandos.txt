@@ -1,0 +1,2 @@
+iniciar o npm dev (pasta alurapic) - npm run dev 
+startar o npm e consumir API (pasta api) - npm start
