@@ -3,7 +3,7 @@
 
         <h1 class="centralizado">Alurapic</h1>
 
-        <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="filtre pelo título da foto">
+        <input type="search" class="filtro" @input="filtro = $event.target.value" placeholder="Filtre pelo título da foto">
 
         <ul class="lista-fotos">
         <li class="lista-fotos-item" v-for="foto of fotosComFiltro">
