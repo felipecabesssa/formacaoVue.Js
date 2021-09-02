@@ -2,15 +2,16 @@
 
 <template>
   <div class="corpo">
-  <!-- Hora tem que exibir um componente, hora outro. -->
+    <!-- Hora tem que exibir um componente, hora outro. -->
+    /* hora é um caraio comentado, Hora não !!!.
   </div>
 </template>
 
 <script>
-
 export default {
 }
 </script>
+
 <style>
 .corpo {
   font-family: Helvetica, sans-serif;
