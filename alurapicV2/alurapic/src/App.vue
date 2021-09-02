@@ -1,7 +1,7 @@
 <template>
   <div class="corpo">
     <!-- é aqui que encontrará os componentes de página que queremos visualizar -->
-    <h1>teste</h1>
+    <router-view></router-view>
   </div>
 </template>
 
