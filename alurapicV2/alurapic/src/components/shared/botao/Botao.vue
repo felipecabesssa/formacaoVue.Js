@@ -1,5 +1,5 @@
 <template>
-    <button class="botao botao-perigo" :type="tipo">{{rotulo}}</button>
+    <button class="botao botao-perigo" :type="tipo">{{ rotulo }}</button>
 </template>
 <script>
 export default {
