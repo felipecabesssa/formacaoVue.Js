@@ -1,18 +1,13 @@
 <template>
-  <div>
-    <h1 class="centralizado">Cadastro</h1>
-  </div>
+    <h2 class="centralizado">Cadastro</h2>
 </template>
-
 <script>
 
-export default {
-
-}
-
 </script>
-<style scoped>
+<style>
+
     .centralizado {
+
         text-align: center;
     }
 </style>
