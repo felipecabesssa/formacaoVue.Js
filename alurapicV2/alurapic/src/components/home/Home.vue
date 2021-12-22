@@ -12,6 +12,9 @@
         <meu-painel :titulo="foto.titulo">
           
           <imagem-responsiva v-meu-transform:scale.animate="3.5" :url="foto.url" :titulo="foto.titulo"/>
+          <router-link :to="{ name : 'altera', params: { id: foto._id} }">
+            <meu-botao tipo="button" rotulo="ALTERAR"/>
+          </router-link>
           <meu-botao 
             tipo="button" 
             rotulo="REMOVER" 
@@ -74,8 +77,7 @@ export default {
           this.fotos.splice(indice, 1);
           this.mensagem = 'Foto removida com sucesso';
         }, err => {
-          console.log(err);
-          this.mensagem = 'Não foi possível remover a foto';
+          this.mensagem = err.message;
         });
     }
 
@@ -87,7 +89,7 @@ export default {
 
     this.service
       .lista()
-      .then(fotos => this.fotos = fotos, err => console.log(err));
+      .then(fotos => this.fotos = fotos, err => this.mensagem = err.message);
   }
 }
 
