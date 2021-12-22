@@ -1,2 +1,4 @@
 iniciar o npm dev (pasta alurapic) - npm run dev 
 startar o npm e consumir API (pasta api) - npm start
+
+programa rodando no c:/dev/alurapic
